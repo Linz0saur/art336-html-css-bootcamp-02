@@ -37,10 +37,10 @@ h1 + p {
 }
 
 h2 {
-    @include fontSize(44px);
+    @include fontSize(34px);
     margin-top: 50px;
     margin-bottom: 8px;
-    text-transform: uppercase;
+   
 }
 
 h2 + p {
