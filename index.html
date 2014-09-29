@@ -6,10 +6,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Intorduction to Web Typography</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!--<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,600|Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>-->
+        <!--<<<<link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>>-->
         <link rel="stylesheet" href="css/main.css">
     </head>
-    
+   
     <body>
         <h1>Legos</h1>
         <p>Lego is a popular line of construction toys manufactured by <em>The Lego Group</em>, a privately held company based in <strong>Billund, Denmark</strong>. The company's flagship product, Lego, consists of colourful interlocking plastic bricks and an accompanying array of gears, minifigures and various other parts. Lego bricks can be assembled and connected in many ways, to construct such objects as vehicles, buildings, and even working robots. Anything constructed can then be taken apart again, and the pieces used to make other objects.</p>
@@ -39,63 +39,15 @@
         <cite><small>Wikipedia, the free encyclopedia</small></cite>
         
         
-        <h3>Generic font families</h3>
-        <p>To give Web designers some control over the appearance of fonts on their Web pages, even when the specified fonts are not available, the CSS specification allows the use of several generic font families. These families are designed to split fonts into several categories based on their general appearance. They are commonly specified as the last in a series of fallback fonts, as a last resort in the event that none of the fonts specified by the author are available. There are five generic families:</p>
+        <h3><em>Why use Legos?</em></h3>
+        
         <dl>
-            <dt>Sans-serif</dt>
-                <dd>Fonts that do not have decorative markings, or serifs, on their letters. These fonts are often considered easier to read on screens.</dd>
-            <dt>Serif</dt>
-                <dd>Fonts that have decorative markings, or serifs, present on their characters.</dd>
-            <dt>Monospace</dt>
-                <dd>Fonts in which all characters are equally wide.</dd>
-            <dt>Cursive</dt>
-                <dd>Fonts that resemble cursive writing. These fonts may have a decorative appearance, but they can be difficult to read at small sizes, so they are generally used sparingly.</dd>
-            <dt>Fantasy</dt>
-                <dd>Fonts that may contain symbols or other decorative properties, but still represent the specified character.</dd>
-        </dl>
-        <h2>Web fonts</h2>
-        <h3>History</h3>
-        <p>A technique to download remote fonts was first specified in the CSS2 specification, which introduced the <a href="http://css-tricks.com/snippets/css/using-font-face/" target="_blank">@font-face</a> rule.</p>
-        <p>It was (and remains) controversial because using a remote font as part of a Web page allows the font to be freely downloaded. This could result in fonts being used against the terms of their license or illegally spread through the Web. TrueDoc (PFR), Embedded OpenType (EOT) and Web Open Font Format (WOFF) are formats designed to address these issues.</p>
-        <p>Since the introduction of Internet Explorer 4, font embedding employing EOT has been used mainly for displaying characters in writing systems that are not supported by default fonts. Use on English-language Web sites was virtually non-existent. With the releases of Firefox 3.5, Opera 10 and Safari 3.1, usage employing other formats is expected to increase.</p>
-        <h3>File formats</h3>
-        <p>By using a specific CSS @font-face embedding technique it is possible to embed fonts such that they work with IE4+, Firefox 3.5+, Safari 3.1+, Opera 10+ and Chrome 4.0+. This allows the vast majority of Web users to access this functionality. Some commercial foundries object to the redistribution of their fonts. For example, Hoefler &amp; Frere-Jones says that, while they &ldquo;...enthusiastically [support] the emergence of a more expressive Web in which designers can safely and reliably use high-quality fonts online,&rdquo; the current delivery of fonts using @font-face is considered &ldquo;illegal distribution&rdquo; by the foundry and is not permitted.</p>
-        <p>Naturally this does not interfere with fonts and foundries under free licenses.</p>
-        <h4>TrueDoc</h4>
-        <p><a href="http://www.monotype.com/libraries/bitstream" target="_blank">Bitstream</a> developed   <strong>TrueDoc</strong>, the first standard for embedding fonts. TrueDoc was natively supported in Netscape Navigator 4, but was discontinued in Netscape Navigator 6 and Mozilla, because Netscape could not release Bitstream's source code. A WebFont Player plugin was available for Internet Explorer, but the technology had to compete against Microsoft&rsquo;s Embedded OpenType fonts, natively supported since version 4.0.</p>
-        <h4>Embedded OpenType</h4>
-        <p>Internet Explorer has supported font embedding through the proprietary Embedded OpenType standard since version 4.0. It uses digital rights management techniques to help prevent fonts from being copied and used without a license. A simplified subset of EOT has been formalized under the name of CWT <em>Compatibility Web Type, formerly EOT-Lite</em></p>
-        <h4>Scalable Vector Graphics</h4>
-        <p>Web typography applies to SVG in two ways:</p>
-        <ol>
-            <li>All versions of the SVG 1.1 specification, including the SVGT subset, define a font module allowing the creation of fonts within an SVG document. Safari introduced support for many of these properties in version 3. Opera added preliminary support in version 8.0, with support for more properties in 9.0.</li>
-            <li>The SVG specification lets CSS apply to SVG documents in a similar manner to HTML documents, and the @font-face rule can be applied to text in SVG documents. Opera added support for this in version 10, and WebKit since version 325 also supports this method using SVG fonts only.</li>
-            <li>Lorem ipsum dolor sit amet consectetur</li>
-            <li>Lorem ipsum dolor sit amet consectetur</li>
-            <li>Lorem ipsum dolor sit amet consectetur</li>
-            <li>Lorem ipsum dolor sit amet consectetur</li>
-            <li>Lorem ipsum dolor sit amet consectetur</li>
-            <li>Lorem ipsum dolor sit amet consectetur</li>
-            <li>Lorem ipsum dolor sit amet consectetur</li>
-            <li>Lorem ipsum dolor sit amet consectetur</li>
-            <li>Lorem ipsum dolor sit amet consectetur</li>
-            <li>Lorem ipsum dolor sit amet consectetur</li>
-        </ol>
-        <h4>TrueType/OpenType</h4>
-        <p>Linking to industry-standard TrueType (TTF) and OpenType (TTF/OTF) fonts are supported by Mozilla Firefox 3.5+, Opera 10+, Safari 3.1+, Google Chrome 4.0+. Internet Explorer 9+ supports only those fonts with embedding permissions set to installable.</p>
-        <h4>Web Open Font Format</h4>
-        <p>WOFF has been supported by Mozilla Firefox 3.6+, Google Chrome 5+, Opera Presto, and is supported by Internet Explorer 9 (since March 14, 2011). Support is available on Mac OS X Lion's Safari from release 5.1.</p>
-        <h4>An example of a CSS @font-face setup:</h4>
-        <p><code>@font-face { font-family: 'Journal'; src:url('http://your-own.site/fonts/journal/journal.woff') format('woff'), url('http://your-own.site/fonts/journal/journal.svg#Journal') format('svg'), url('http://your-own.site/fonts/journal/journal.ttf') format('truetype'), url('http://your-own.site/fonts/journal/journal.eot'), url('http://your-own.site/fonts/journal/journal.eot?#iefix') format('embedded-opentype'); font-weight: normal; font-style: normal; }</code></p>
-        <hr/>
-        <h1>Lorem ipsum dolor sit amet consectetur</h1>
-        <h2>Lorem ipsum dolor sit amet consectetur</h2>
-        <h3>Lorem ipsum dolor sit amet consectetur</h3>
-        <h4>Lorem ipsum dolor sit amet consectetur</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rhoncus metus at tempus gravida. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris mollis orci sit amet turpis porttitor, a molestie enim viverra.</p>
-        <small>Lorem ipsum dolor sit amet consectetur</small>
-        <h5>Lorem ipsum dolor sit amet consectetur</h5>
-        <h6>Lorem ipsum dolor sit amet consectetur</h6>
+            <dt>They are fun!</dt>
+                <dd>Fun can be found at any age when you play with legos</dd>
+            <dt>They expand the mind</dt>
+                <dd>Finding interesting things to make out of Legos is challenging and intellectually stimulating</dd>
+                <dd>Finding interesting things to make out of Legos is challenging and intellectually stimulating</dd>
+            
     </body>
     
 </html>
