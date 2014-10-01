@@ -15,27 +15,39 @@ Globals
     font-size: calculateRem($size);
 }
 
-// Loading Google Fonts
 @font-face {
   font-family: 'Bitter';
   font-style: normal;
-  font-weight: 100;
+  font-weight: 400;
   src: local('Bitter-Regular'), url(http://fonts.gstatic.com/s/bitter/v7/2PcBT6-VmYhQCus-O11S5-vvDin1pK8aKteLpeZ5c0A.woff) format('woff');
 }
+@font-face {
+  font-family: 'Bitter';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Bitter-Bold'), url(http://fonts.gstatic.com/s/bitter/v7/evC1haE-MsorTl_A7_uSGbO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+@font-face {
+  font-family: 'Bitter';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Bitter-Italic'), url(http://fonts.gstatic.com/s/bitter/v7/eMS0tViDqryBl0EG1pqFZXYhjbSpvc47ee6xR_80Hnw.woff) format('woff');
+}
+
 @mixin body-font-regular {
      font-family: 'Bitter';
      font-style: normal;
-     font-weight: 100;
+     font-weight: 400;
 }
 @mixin body-font-italic {
     font-family: 'Bitter';
     font-style: italic;
-    font-weight: 100;
+    font-weight: 400;
 }
 @mixin body-font-bold {
     font-family: 'Bitter';
-    font-style: bold;
-    font-weight: 100;
+    font-style: normal;
+    font-weight: 700;
 }
 @mixin headline-font {
      font-family: 'Bitter';
